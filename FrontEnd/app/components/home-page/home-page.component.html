@@ -1,0 +1,18 @@
+<div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+  <div class="container container-background">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="menu-section-heading">Explore Category</h2>
+      </div>
+      <!-- Loop through getCategoryList and generate cards dynamically -->
+      <div class="col-12 col-md-6 col-lg-4 pointer" *ngFor="let category of getCategoryList">
+        <div class="shadow menu-item-card mb-3" (click)="gotoLogin(category)">
+          <!-- Use category.catimage or a default image -->
+          <img src="assets/images/{{category.catimage}}" class="menu-item-image w-100" alt="{{ category.catimage }}" />
+          <h1 class="menu-card-title">{{ category.name }}</h1>
+        </div>
+      </div>
+      <!-- End of dynamic category cards -->
+    </div>
+  </div>
+</div>

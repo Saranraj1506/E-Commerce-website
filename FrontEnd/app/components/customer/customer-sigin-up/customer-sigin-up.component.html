@@ -1,0 +1,68 @@
+<div class="register-tab card shadow">
+    <div class="main centered">
+      <h1>Register</h1>
+    </div>
+    <div class="main centered">
+      <form (ngSubmit)="signup()">
+        <table>
+          <!-- Add similar rows for other fields -->
+          <!-- ... -->
+          <tr>
+            <td class="label">First Name</td>
+            <td>
+              <input type="text" [(ngModel)]="firstname" name="firstname" class="form-control" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">Last Name</td>
+            <td>
+              <input type="text" [(ngModel)]="lastname" name="lastname" class="form-control" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">Address</td>
+            <td>
+              <input type="text" [(ngModel)]="address" name="address" class="form-control" required>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">User Name</td>
+            <td>
+              <input type="text" [(ngModel)]="username" name="username" class="form-control"  required>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">email ID</td>
+            <td>
+              <input type="email" [(ngModel)]="emailID" name="emailID" class="form-control"  required>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">Phone</td>
+            <td>
+              <input type="text" [(ngModel)]="phone" name="phone" class="form-control"  required>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="label">Password</td>
+            <td>
+              <input type="password" [(ngModel)]="password" name="password" class="form-control" required>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="information">
+              Password should contain 1 Uppercase, 1 Digit and should be 8 characters long
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div class="centered">
+          <button type="submit" mat-raised-button color="primary">Signup</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <br /><br />
+  
